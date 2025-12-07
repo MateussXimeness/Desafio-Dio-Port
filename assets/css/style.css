@@ -1,0 +1,423 @@
+@font-face {
+    font-family: 'Pirata'; 
+    src: url('./fonts/TradeWinds-Regular.ttf') format('truetype');
+    src: url('./fonts/Vinque\ Rg.otf') format('truetype');
+    font-weight: normal; 
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Pirata-Texto'; 
+    src: url('./fonts/Vinque Rg.otf') format('opentype'); 
+    font-weight: normal; 
+    font-style: italic;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    vertical-align: baseline;
+    list-style: none;
+}
+
+a {
+    color: inherit;
+}
+
+.header{
+    display: flex;
+    flex-direction: column;
+    background-image: 
+        linear-gradient(rgba(255, 200, 100, 0.3), rgba(255, 200, 100, 0.3)),
+        url(../images/mar.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;  
+}
+
+.logo-container {
+    display: flex;                   
+    align-items: center;                                 
+    margin-bottom: 10px;
+    border: 0.5px solid;  
+
+}
+
+.logo, .nav-link {
+    margin: 0.4rem;                      
+    color: black;                  
+    font-family: 'Pirata', sans-serif;
+}
+
+.tagline {
+    font-size: 1.2rem;   
+    margin-left: 3rem; 
+    text-align: center;                
+    color: #333;                     
+    font-style: italic;             
+    padding: 0px 10px;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.luneta {
+    width: auto; 
+    height: 5rem;
+    flex-shrink: 0;
+    
+}
+
+.nav-list{
+    display: flex;
+    flex-direction: row;
+    font-size: 1.4rem;
+    gap:30px;
+    justify-content: space-around;
+   
+}
+
+.nav-link{
+    margin-top: 1rem;
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    padding: 0 5px;
+}
+
+.icon {
+    width: 5rem;  
+    height: 4rem;
+    background-image: url(../images/sunny-removebg-preview.png);  
+    background-size: contain ;  
+    background-repeat: no-repeat;
+    background-position: center;
+    flex-shrink: 0; 
+    margin-left: 1px;
+}
+
+/* section 2 */
+
+.section1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    padding: 30px 20px;
+    margin: 0 auto; 
+    
+    gap: 10px;   
+    
+    background-image: 
+        linear-gradient(rgba(255, 200, 100, 0.5), rgba(255, 200, 100, 0.3)),
+        url(../images/mapa.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; 
+    
+    height: 70vh; 
+    width: 100%;  
+}
+
+
+.section1 h2 {
+    text-align: left; 
+    font-size: 2rem;
+    font-weight: bold;
+    color: white; 
+    margin:0;
+    padding-left: 20px; 
+    font-family: 'Pirata', Arial, Helvetica, sans-serif;
+}
+
+.sobreMim, .content1{
+    background-color: rgba(0, 0, 0, 0.5);  /* Retângulo clarinho: branco semi-transparente (0.8 = 80% opaco, 20% transparente) */
+    padding: 20px;  /* Espaço interno pro retângulo "respirar" */
+    border-radius: 10px;  /* Bordas arredondadas pro retângulo */
+}
+
+.content1 {
+    display: flex;
+    flex-direction: row; 
+    gap: 30px; 
+    align-items: center; 
+    justify-content: center; 
+    
+}
+
+.content1 p {
+    text-align: left; 
+    font-size: 1.5rem;
+    line-height: 1.6;
+    color: white; 
+    flex: 0 1 480px; 
+    margin: 0;
+    padding-right: 10px; 
+    font-family: 'Pirata-Texto', Arial, Helvetica, sans-serif;
+}
+
+.profile {
+    height: 50vh;
+    object-fit: cover;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+/* section 2 */
+
+#formacao{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+
+    padding: 30px 20px;
+    margin: 0 auto; 
+    
+    gap: 10px; 
+        
+    height: 70vh; 
+    width: 100%;   
+    
+    background-image: url(../images/yellow.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.section2 h2 {
+    text-align: center;
+    font-size: 5rem;
+    font-weight: bold;
+    color: #333;
+    margin: 3rem;
+    font-family: 'Pirata', Arial, Helvetica, sans-serif;
+}
+
+.content2 {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    align-items: flex-start;
+    width: 100%;
+    justify-content: center;
+}
+
+.timeline {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    list-style: none;
+    width: 100%;
+    max-width: 600px;
+}
+
+.timeline-item {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 20px;
+    border: 4px solid #ddd;
+    border-radius: 10px;
+    text-align: center;
+    font-family: 'Pirata-Texto', Arial, Helvetica, sans-serif
+}
+
+.timeline-item h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+    margin: 10;
+}
+
+.timeline-item p {
+    font-size: 1rem;
+    color: #666;
+    margin: 0;
+}
+
+/* section 3 */
+
+
+#habilidades{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+
+    padding: 30px 20px;
+    margin: 0 auto; 
+    
+    gap: 10px; 
+        
+    height: 70vh; 
+    width: 100%;   
+    
+    background-image: url(../images/law.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.section3 h2 {
+    font-family: 'Pirata-Texto', Arial, Helvetica, sans-serif;
+    font-size: 3rem;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
+
+.section3 h3 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #f5f5f5;
+    margin: 1rem;
+    font-family: 'Pirata', Arial, Helvetica, sans-serif;
+}
+
+.skills-grid {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    align-items: flex-start;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+
+.skill-item {
+    display: flex;                   
+    flex-direction: column;          
+    gap: 50px;                       
+    list-style: none;
+    width: 100%;
+    max-width: 600px;
+    flex: 1;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    text-align: center;
+    font-family: 'Pirata-Texto', Arial, Helvetica, sans-serif;
+    background-color: rgba(0, 0, 0, 0.5);  /* Limpo: vírgulas e parênteses corretos */
+}
+
+.skill-item p {
+    font-size: 2rem;
+    color: #ffffff;
+    margin: 0;
+}
+
+.skill-icon{
+    font-size: 2rem;;
+}
+
+#contato{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+
+    padding: 30px 20px;
+    margin: 10px auto; 
+    
+    gap: 20px; 
+        
+    height: 70vh; 
+    width: 100%;   
+    
+    background-image: url(../images/zoro.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#contato{
+    margin: auto;
+    background-color: rgb(255, 200, 1);
+}
+
+#contato h2 {
+    font-family: 'Pirata', Arial, Helvetica, sans-serif;
+    font-size: 4rem;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    margin-bottom: 20px;
+}
+
+.contact-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 40px;
+    border-radius: 20px;
+    max-width: 600px;
+}
+
+.contact-content p {
+    font-family: 'Pirata-Texto', Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    color: white;
+    text-align: center;
+    margin: 0;
+}
+
+.contact-links {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+}
+
+.contact-link {
+    font-family: 'Pirata-Texto', Arial, Helvetica, sans-serif;
+    font-size: 1.3rem;
+    color: white;
+    text-decoration: none;
+    padding: 15px 30px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 2px solid white;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.contact-link:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.footer{
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+    font-family: 'Pirata-Texto', Arial, Helvetica, sans-serif;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.luffyCrianca {
+    width: 100px;  
+    height: 120px; 
+    margin-right: 15px; 
+}
+
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+
+
